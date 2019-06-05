@@ -13,8 +13,7 @@ public class Client {
                  BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                  BufferedWriter out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             ) {
-                String msg;
-                String serverMsg = null;
+                String msg, serverMsg;
                 while (!socket.isOutputShutdown()) {
 
                     System.out.println("Enter you message:");
